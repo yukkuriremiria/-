@@ -1,2 +1,2 @@
-const music = new Audio('musics/music.mp3');
+const music = new Audio('bgm.mp3');
 music.play();
