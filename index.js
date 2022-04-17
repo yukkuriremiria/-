@@ -1,9 +1,2 @@
-window.addEventListener('DOMContentLoaded', function(){
-
-  const audioElement = document.querySelector("audio");
-
-  audioElement.addEventListener('loadeddata', (e)=> {
-    audioElement.muted = true;
-    audioElement.autoplay = true;
-  });
-});
+const music = new Audio('musics/music.mp3');
+music.play();
