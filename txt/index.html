@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<title>一行掲示板</title>
+</head>
+<body>
+	<h1>一行掲示板</h1>
+	<form action="" method="post">
+		<input type="text" id="message" name="message">
+		<input type="button" id="post" value="投稿">
+	</form>
+	<h2>投稿一覧</h2>
+	<input type="button" id="clear" value="投稿一覧の削除">
+	<ul id="commnentList"></ul>
+<script>
+$(function() {
+
+	function timeString(date) {
+		return date.getFullYear() + '年' + date.getMonth() + '月' + date.getDate() + '日' + date.getHours() + '時' + date.getMinutes() + '分' + date.getSeconds() + '秒';
+	};
+	
+	if(localStorage.getItem('comment')) {
+		$('#commnentList').html(localStorage.getItem('comment'));
+	}
+	
+	$('#post').click(function(){
+		var post = $('<div/>').text($('#message').val()).html();
+		var posts = $('#commnentList').html();
+		posts = '<li>' + post + '<br>投稿日:' + timeString(new Date()) + '</li>' + posts;
+		$('#commnentList').html(posts);
+		$('#message').val('');
+		localStorage.setItem('comment', $('#commnentList').html());
+	});
+	
+	$('#clear').click(function(){
+		$('#commnentList').html('');
+		localStorage.removeItem('comment');
+	});
+
+});
+</script>
+</body>
+</html>
