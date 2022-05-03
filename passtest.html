@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<HEAD>
+<TITLE>Login(ぴぃまんのホームページ)★</TITLE>
+<body style="background-image:url(http://pi-mannokanzumee.ml/web-back.png);">
+
+
+<h2 style="text-align:center"><font color="#BBFFFF"><body>
+    <style>
+        .menu ber{
+            width: 1000px;
+            height: 50px;
+            border: 1px solid;
+            overflow: hidden;
+        }
+    </style>
+        <p class="menu ber">	
+             <a href="index.html" target="right">ホーム</a>
+	<a href="brog.html" target="right">ブログ</a>
+	<a href="ver.html" target="right">更新履歴</a>
+	<a href="fom.html" target="right">お問い合わせ</a>
+	<a href="Login.html" target="right">ログイン</a>
+</body></font></h2>
+
+
+<html lang="ja">
+	<style type="text/css">
+		span.password { font-size: 150%; font-family: monospace; font-weight: bold; margin: 0px 0.3em; }
+		input[type=button] { font-size: 125%; margin: 2em; }
+		div.guide { background-color: #e0e0e0; padding: 3px 1em; }
+	</style>
+
+</head>
+<body>
+
+
+	<p>
+	</p>
+
+
+
+	<script type="text/javascript">
+		function gate(){
+		    var UserInput = prompt("Please enter the password:","");
+
+		    if( /\W+/g.test(UserInput) ) {
+
+		    	alert("Please enter only half-width alphanumerical characters");
+		    }
+		    else if( UserInput != null ) {
+
+				location.href = UserInput + ".html";
+			}
+		}
+	</script>
+
+	<h2 style="text-align:center">
+		<input type="button" value="Login" onclick="gate();">
+	</h2>
+
+</html>
