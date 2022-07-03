@@ -3,3 +3,9 @@ cursor: url(mousu.gif),auto;
 }
 
 a:hover { color: #FF00B9;}
+
+a:visited { color: #78FF00; }
+
+a:active { color: #00FFFF; } 
+
+a:link { color: #D7FFB0; }
