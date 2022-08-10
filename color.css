@@ -1,0 +1,169 @@
+@keyframes gradient {
+    0% {
+        background-position: 10% 500%;
+    }
+    50% {
+        background-position: 1000% 500%;
+    }
+    100% {
+        background-position: 10% 500%;
+    }
+}
+
+body {
+    user-select: none;
+    overflow: hidden;
+    background: linear-gradient(-100000deg, #00fa9a, #00bfff, #9acd32, #00ffff, #00ff7f);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sample{
+    font-size: 150%;
+    font-weight:600;
+    animation:rainbow 3s infinite;
+    -webkit-animation:rainbow 3s infinite;
+}
+@keyframes rainbow{
+    12%{color:#ff5353;}
+    24%{color:#ffcf53;}
+    36%{color:#e8ff53;}
+    48%{color:#53ff5d;}
+    60%{color:#53ffbc;}
+    72%{color:#5393ff;}
+    84%{color:#ca53ff;}
+    100%{color:#ff53bd;}
+}
+@-webkit-keyframes rainbow{
+    12%{color:#ff5353;}
+    24%{color:#ffcf53;}
+    36%{color:#e8ff53;}
+    48%{color:#53ff5d;}
+    60%{color:#53ffbc;}
+    72%{color:#5393ff;}
+    84%{color:#ca53ff;}
+    100%{color:#ff53bd;}
+}
+
+
+
+
+
+.tinko{
+    font-size: 150%;
+    font-weight:600;
+    animation:rainbow 1s infinite;
+    -webkit-animation:rainbow 1s infinite;
+}
+@keyframes rainbow{
+    12%{color:#ff9561;}
+    24%{color:#ffcf35;}
+    36%{color:#e8ff53;}
+    48%{color:#53ff5d;}
+    60%{color:#53ffbc;}
+    72%{color:#5393ff;}
+    84%{color:#ca53ff;}
+    100%{color:#ff53bd;}
+}
+@-webkit-keyframes rainbow{
+    12%{color:#ff5353;}
+    24%{color:#ffcf53;}
+    36%{color:#e81453;}
+    48%{color:#53485d;}
+    60%{color:#5345bc;}
+    72%{color:#5393ff;}
+    84%{color:#ca5348;}
+    100%{color:#ff53bd;}
+}
+
+
+
+.tinkko{
+    font-size: 150%;
+    font-weight:600;
+    animation:rainbow 2s infinite;
+    -webkit-animation:rainbow 2s infinite;
+}
+@keyframes rainbow{
+    12%{color:#ff9561;}
+    24%{color:#ffcf35;}
+    36%{color:#e8ff53;}
+    48%{color:#53ff5d;}
+    60%{color:#53ffbc;}
+    72%{color:#5393ff;}
+    84%{color:#ca53ff;}
+    100%{color:#ff53bd;}
+}
+@-webkit-keyframes rainbow{
+    12%{color:#ff5353;}
+    24%{color:#ffcf53;}
+    36%{color:#e81453;}
+    48%{color:#53485d;}
+    60%{color:#5345bc;}
+    72%{color:#5393ff;}
+    84%{color:#ca5348;}
+    100%{color:#ff53bd;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.tink{
+    font-size: 150%;
+    font-weight:600;
+    animation:rainbow 5s infinite;
+    -webkit-animation:rainbow -1s infinite;
+}
+@keyframes rainbow{
+    12%{color:#ff9561;}
+    24%{color:#ffcf35;}
+    36%{color:#e8ff53;}
+    48%{color:#53ff5d;}
+    60%{color:#53ffbc;}
+    72%{color:#5393ff;}
+    84%{color:#ca53ff;}
+    100%{color:#ff53bd;}
+}
+@-webkit-keyframes rainbow{
+    12%{color:#ff5353;}
+    24%{color:#ffcf53;}
+    36%{color:#e81453;}
+    48%{color:#53485d;}
+    60%{color:#5345bc;}
+    72%{color:#5393ff;}
+    84%{color:#ca5348;}
+    100%{color:#ff53bd;}
+}
+
+
