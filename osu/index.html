@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>閲覧注意</title>
+<style>
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hidden {
+  display: none;
+}
+</style>
+</head>
+<body>
+<center><big><big><big><big><big><big><big><big>
+<span id="myText">ここをクリックしてください</span></center></big>
+<img id="myImg" class="hidden" src="potta.jpg" alt="Image">
+<audio id="myAudio" src="ware.mp3" loop></audio>
+<script>
+var text = document.getElementById("myText");
+var img = document.getElementById("myImg");
+text.onclick = function(){
+  img.classList.toggle("hidden");
+  img.classList.toggle("fullscreen");
+}
+window.onbeforeunload = function(e) {
+  return "？"; 
+}
+document.body.onclick = function(){
+  if (!document.fullscreenElement) {
+    document.documentElement.requestFullscreen();
+  }
+}
+var audio = document.getElementById("myAudio");
+  audio.volume = 1;
+document.addEventListener("click", function(){
+  document.getElementById("myAudio").play();
+});
+</script>
+
+</body>
+</html>
